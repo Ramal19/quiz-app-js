@@ -1,0 +1,208 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    position: relative;
+}
+
+.container {
+
+    width: 100%;
+    background-color: #EBFFD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    gap: 30px;
+    padding: 200px 0px;
+}
+
+.container > h1 {
+
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container > form {
+
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #B6F500;
+}
+
+form > .form-group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form > .form-group > label {
+
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form > .form-group > input {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form > .form-group > input:focus {
+
+    border:0.11rem solid #98CD00;
+}
+
+form > button {
+
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #98CD00;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form > button:hover {
+
+    background-color: #7FB800;
+}
+
+.error {
+
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    background-color: #FFBABA;
+    color: #f00;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top: calc(100% - 120px);
+    right: -50px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        top: calc(100% - 120px);
+        right: 50px;
+    }
+}
+
+ .error > .close {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #f00;
+}
+
+.error > .timer {
+
+    width: 350px;
+    height: 5px;
+    background-color: #f00;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: timer 5s linear forwards; 
+}
+
+@keyframes timer {
+    from {
+        width: 350px;
+    }
+    to {
+        width: 0;
+    }
+}
+
+footer {
+
+    width: 100%;
+    padding: 20px;
+    background-color: #C4E1E6;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+  
+  .container {
+    padding: 100px 20px;
+  }
+
+  .container > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .container > form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .form-group > label {
+    font-size: 1rem;
+  }
+
+  .form-group > input {
+    font-size: 0.9rem;
+  }
+
+  form > button {
+    font-size: 1rem;
+  }
+
+  .error {
+    width: 300px;
+    right: 5%;
+    top: auto;
+    bottom: 50px;
+    font-size: 0.9rem;
+    padding: 20px;
+    top: calc(100% - 120px);
+    right: -50px;
+  }
+
+  .error > .timer {
+    width: 100%;
+  }
+
+  @keyframes timer {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}

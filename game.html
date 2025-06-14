@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <div class="animation">
+        <img src="./images/app-image.png" alt="Quiz App Logo" class="logo-animation">
+        <h1>
+            Quiz App
+            <span class="version">v1.0</span>
+        </h1>
+        <h4>Welcome to the Quiz App! Get ready to test your knowledge.</h4>
+
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <div class="loading">
+
+    </div>
+
+
+    <header>
+        <nav>
+            <img src="./images/app-image.png" alt="Quiz App Logo" class="logo">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </div>
+
+            <ul>
+                <li id="home-link">
+                    Home
+                </li>
+                <li>
+                    <a href="./programmer-info.html">About</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="create-quiz">
+            <div class="add-box">
+                <i class="bi bi-plus"></i>
+            </div>
+            <h2>Create Quiz</h2>
+            <button>
+                <i class="bi bi-arrow-down-right"></i>
+                <span>Start</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="./js/game.js"></script>
+</body>
+
+</html>

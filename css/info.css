@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  background-color: #8DBCC7;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed; 
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 0;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #8DBCC7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header > nav > ul > li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header > nav > ul > li:hover {
+    background-color: #C4E1E6;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #EBFFD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.container > .website-title {
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C4E1E6;
+    color: #333;
+
+}
+
+.container > h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container > .website-title > .image-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container > .website-title > .image-name > img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container > ul  {
+
+    list-style-type: none;
+    background-color: #C4E1E6;
+    width: 100%;
+    padding: 20px;
+}
+
+.container > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #8DBCC7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+  
+  header {
+    display: none;
+  }
+
+  header {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  header > nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header > nav > ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  header > nav > ul > li {
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+
+  .container > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .container > .website-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .container > .website-title > .image-name > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container > ul {
+    padding: 15px;
+  }
+
+  .container > ul > li {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
