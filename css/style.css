@@ -143,11 +143,13 @@ form > button:hover {
 footer {
 
     width: 100%;
-    padding: 20px;
+    padding: 35px 0;
     background-color: #C4E1E6;
     text-align: center;
     color: #333;
 }
+
+
 
 @media (max-width: 600px) {
   
