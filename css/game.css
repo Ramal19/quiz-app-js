@@ -362,3 +362,11 @@ section > .create-quiz > .add-box:hover > .bi-plus {
     background-color: transparent;
     border-bottom: 2px solid #6A9DAF;
 }
+
+@media (max-width: 600px) {
+    section {
+
+        display: flex;
+        flex-direction: column;
+    }
+}
