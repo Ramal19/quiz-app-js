@@ -364,6 +364,16 @@ section > .create-quiz > .add-box:hover > .bi-plus {
 }
 
 @media (max-width: 600px) {
+
+    header {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
     section {
 
         display: flex;
